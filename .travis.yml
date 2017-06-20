@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - '7.8.0'
+
+install:
+  - npm install
+
+deploy:
+  provider: npm
+  email: alexandre.moatty@gmail.com
+  api_key: $NPM_TOKEN
+  on:
+    tags: true
