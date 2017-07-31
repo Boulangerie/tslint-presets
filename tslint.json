@@ -28,7 +28,16 @@
       "LF"
     ],
     "member-access": true,
-    "member-ordering": [true],
+    "member-ordering": [true, {
+      "order": [
+        "static-field",
+        "instance-field",
+        "constructor",
+        "public-instance-method",
+        "protected-instance-method",
+        "private-instance-method"
+      ]
+    }],
     "new-parens": true,
     "no-arg": true,
     "no-bitwise": true,
@@ -37,12 +46,11 @@
     "no-console": [true],
     "no-constant-condition": true,
     "no-construct": true,
-    "no-constructor-vars": true,
+    "no-parameter-properties": true,
     "no-control-regex": true,
     "no-debugger": true,
     "no-default-export": true,
     "no-duplicate-case": true,
-    "no-duplicate-key": true,
     "no-duplicate-variable": true,
     "no-empty": true,
     "no-empty-character-class": true,
@@ -64,18 +72,17 @@
     "no-switch-case-fall-through": true,
     "no-trailing-whitespace": true,
     "no-unexpected-multiline": true,
-    "no-unreachable": true,
     "no-unsafe-finally": true,
     "no-unused-expression": true,
     "no-unused-new": false,
-    "no-unused-variable":true,
+    "no-unused-variable": true,
     "no-use-before-declare": true,
     "no-var-keyword": true,
     "no-var-requires": true,
     "object-literal-sort-keys": false,
     "one-variable-per-declaration": [true],
     "one-line": [true],
-    "only-arrow-functions": [true],
+    "only-arrow-functions": [true, "allow-named-functions"],
     "quotemark": [
       true,
       "single"
@@ -117,7 +124,9 @@
     "variable-name": [
       true,
       "check-format",
-      "allow-leading-underscore"
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "ban-keywords"
     ],
     "whitespace": [
       true,
