@@ -83,6 +83,7 @@
     "one-variable-per-declaration": [true],
     "one-line": [true],
     "only-arrow-functions": [true, "allow-named-functions"],
+    "prefer-const": true,
     "quotemark": [
       true,
       "single"
